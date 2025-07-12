@@ -1,61 +1,39 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
-
 export default function Contact() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Message sent! (This is just a demo)");
-  };
-
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -30 }}
-      transition={{ duration: 0.5 }}
-      className="min-h-screen bg-white text-gray-800 p-8"
-    >
-      <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
-      <form onSubmit={handleSubmit} className="space-y-4 max-w-lg">
+    <div className="flex flex-col items-center justify-center min-h-screen p-8 bg-custom-gray text-miami-teal">
+      <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
+      <form
+        action="https://formspree.io/f/myzjrlzg"
+        method="POST"
+        className="flex flex-col space-y-4 w-full max-w-md"
+      >
         <input
           type="text"
           name="name"
           placeholder="Your Name"
-          value={form.name}
-          onChange={handleChange}
-          className="w-full p-2 border rounded"
+          className="p-2 border border-miami-teal rounded"
           required
         />
         <input
           type="email"
           name="email"
           placeholder="Your Email"
-          value={form.email}
-          onChange={handleChange}
-          className="w-full p-2 border rounded"
+          className="p-2 border border-miami-teal rounded"
           required
         />
         <textarea
           name="message"
           placeholder="Your Message"
-          value={form.message}
-          onChange={handleChange}
-          className="w-full p-2 border rounded h-32"
+          className="p-2 border border-miami-teal rounded h-32"
           required
         />
         <button
           type="submit"
-          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+          className="bg-navy-blue text-white py-2 px-4 rounded hover:bg-blue-dark transition"
         >
           Send Message
         </button>
       </form>
-    </motion.div>
+    </div>
   );
 }
