@@ -24,7 +24,7 @@ export default function Contact() {
         <textarea
           name="message"
           placeholder="Your Message"
-          className="p-2 border border-pink-black rounded h-32"
+          className="p-2 border border-black rounded h-32"
           required
         />
         <button
