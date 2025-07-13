@@ -11,20 +11,20 @@ export default function Contact() {
           type="text"
           name="name"
           placeholder="Your Name"
-          className="p-2 border border-pink-400 rounded"
+          className="p-2 border border-black rounded"
           required
         />
         <input
           type="email"
           name="email"
           placeholder="Your Email"
-          className="p-2 border border-pink-400 rounded"
+          className="p-2 border border-black rounded"
           required
         />
         <textarea
           name="message"
           placeholder="Your Message"
-          className="p-2 border border-pink-400 rounded h-32"
+          className="p-2 border border-pink-black rounded h-32"
           required
         />
         <button
