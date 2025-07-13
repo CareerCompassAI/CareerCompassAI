@@ -9,10 +9,30 @@ export default function App() {
     <>
       {/* Navbar */}
       <nav className="p-4 bg-custom-gray flex gap-6">
-        <Link to="/" className="text-navy-blue hover:underline">Home</Link>
-        <Link to="/about" className="text-navy-blue hover:underline">About</Link>
-        <Link to="/projects" className="text-navy-blue hover:underline">Projects</Link>
-        <Link to="/contact" className="text-navy-blue hover:underline">Contact</Link>
+        <Link
+          to="/"
+          className="text-navy-blue hover:text-blue-600 transition"
+        >
+          Home
+        </Link>
+        <Link
+          to="/about"
+          className="text-navy-blue hover:text-blue-600 transition"
+        >
+          About
+        </Link>
+        <Link
+          to="/projects"
+          className="text-navy-blue hover:text-blue-600 transition"
+        >
+          Projects
+        </Link>
+        <Link
+          to="/contact"
+          className="text-navy-blue hover:text-blue-600 transition"
+        >
+          Contact
+        </Link>
       </nav>
 
       {/* Page Content */}
