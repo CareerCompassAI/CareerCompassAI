@@ -7,7 +7,7 @@ export default function Projects() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -30 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen bg-white text-gray-800 p-8"
+      className="min-h-screen bg-white text-pink-500 p-8"
     >
       <h2 className="text-3xl font-bold mb-6">My Projects</h2>
 
