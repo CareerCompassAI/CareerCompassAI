@@ -1,7 +1,16 @@
+import { motion } from "framer-motion";
+
 export default function Contact() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-8 bg-custom-gray text-pink-500">
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -30 }}
+      transition={{ duration: 0.5 }}
+      className="flex flex-col items-center justify-center min-h-screen p-8 bg-custom-gray text-pink-500"
+    >
       <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
+
       <form
         action="https://formspree.io/f/myzjrlzg"
         method="POST"
@@ -34,6 +43,6 @@ export default function Contact() {
           Send Message
         </button>
       </form>
-    </div>
+    </motion.div>
   );
 }
