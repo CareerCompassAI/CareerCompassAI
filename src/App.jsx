@@ -1,20 +1,27 @@
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Projects from './pages/Projects.jsx';
+import Contact from './pages/Contact.jsx';
+import NotFound from './pages/NotFound.jsx';
+import Navbar from './components/Navbar.jsx';
+
 function App() {
   return (
     <div
       className="min-h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('/background.jpg')" }}
+      style={{ backgroundImage: "url('/background.jpg')" }} // ← sets background for all pages
     >
-      <div className="bg-black bg-opacity-50 min-h-screen text-white p-10">
-        {/* Start of your actual website layout */}
-        <h1 className="text-4xl font-bold">Welcome to My Portfolio</h1>
-        <p className="mt-4">Explore my work and projects below!</p>
+      <div className="bg-black/20 min-h-screen text-white">
+        <Navbar />
 
-        {/* Example: Add real components here */}
-        {/* <Navbar /> */}
-        {/* <Hero /> */}
-        {/* <Projects /> */}
-        {/* <Footer /> */}
-        {/* End of your website layout */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
       </div>
     </div>
   );
