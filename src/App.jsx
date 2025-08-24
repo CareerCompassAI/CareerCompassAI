@@ -5,6 +5,7 @@ import Projects from './pages/Projects.jsx';
 import Contact from './pages/Contact.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Layout from './components/Layout.jsx';
+import AIPage from './pages/AIPage.jsx'; // 👈 New import
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/ai" element={<AIPage />} /> {/* 👈 New route */}
         {/* Catch-all 404 */}
         <Route path="*" element={<NotFound />} />
       </Route>
