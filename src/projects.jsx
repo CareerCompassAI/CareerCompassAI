@@ -8,7 +8,7 @@ export default function Projects() {
           An AI-powered website I built to help students find a career path they’ll love
           based on their hobbies and goals.
         </p>
-        <a href="/careercompassai" className="text-blue-500 hover:underline">
+        <a href="/PolarisAI" className="text-blue-500 hover:underline">
           View Project
         </a>
       </div>
