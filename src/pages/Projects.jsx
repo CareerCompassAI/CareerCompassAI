@@ -21,7 +21,7 @@ export default function Projects() {
             An AI-powered website I built to help students find a career path they’ll love based on their hobbies and goals.
           </p>
           <a
-            href="https://careercompassai.github.io/CareerCompassAI/"
+            href="polarisai.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline mt-2 inline-block"
