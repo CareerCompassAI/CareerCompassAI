@@ -13,21 +13,19 @@ export default function Projects() {
           they’ll love based on their hobbies and goals.
         </p>
 
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            e.stopPropagation();
+        <button
+          type="button"
+          onClick={() =>
             window.open(
               "https://polarisai.vercel.app/",
               "_blank",
               "noopener,noreferrer"
-            );
-          }}
-          className="text-blue-500 hover:underline cursor-pointer"
+            )
+          }
+          className="text-blue-500 hover:underline bg-transparent border-none p-0 cursor-pointer"
         >
           View Project
-        </a>
+        </button>
       </div>
     </div>
   );
