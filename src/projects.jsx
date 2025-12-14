@@ -10,7 +10,7 @@ export default function Projects() {
 
         <p className="mb-2">
           An AI-powered website I built to help students find a career path
-          they’ll love based on their hobbies and goals.
+          they will love based on their hobbies and goals.
         </p>
 
         <button
