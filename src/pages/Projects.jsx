@@ -19,11 +19,11 @@ export default function Projects() {
           <h3 className="text-xl font-semibold mb-2">CareerCompassAI</h3>
           <p className="text-sm">
             An AI-powered website I built to help students find a career path
-            they’ll love based on their hobbies and goals.
+            they’ll love based on their hobbies & goals.
           </p>
 
           <a
-            href=""https://polarisai.vercel.app""
+            href=""https://polarisai.vercel.app/""
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline mt-2 inline-block"
