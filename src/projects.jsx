@@ -14,10 +14,17 @@ export default function Projects() {
         </p>
 
         <a
-          href="https://polarisai.vercel.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline"
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            window.open(
+              "https://polarisai.vercel.app/",
+              "_blank",
+              "noopener,noreferrer"
+            );
+          }}
+          className="text-blue-500 hover:underline cursor-pointer"
         >
           View Project
         </a>
